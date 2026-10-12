@@ -1,6 +1,7 @@
-```html
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,10 +60,11 @@
         renderer="logarithmicDepthBuffer: true;"
     >
 
-        <!-- Marcador do gênero notícia -->
+        <!-- Gênero textual: notícia -->
         <a-marker preset="hiro">
+
             <a-text
-                value="NOTÍCIA"
+                value="NOTICIA"
                 position="0 0.5 0"
                 rotation="-90 0 0"
                 align="center"
@@ -72,16 +74,18 @@
 
             <a-text
                 value="Informa acontecimentos"
-                position="0 0.25 0"
+                position="0 0.2 0"
                 rotation="-90 0 0"
                 align="center"
-                color="#FFFFFF"
-                width="3">
+                color="#FFFF00"
+                width="2">
             </a-text>
+
         </a-marker>
 
-        <!-- Marcador do gênero receita -->
+        <!-- Gênero textual: receita -->
         <a-marker preset="kanji">
+
             <a-text
                 value="RECEITA"
                 position="0 0.5 0"
@@ -93,12 +97,13 @@
 
             <a-text
                 value="Ensina a preparar algo"
-                position="0 0.25 0"
+                position="0 0.2 0"
                 rotation="-90 0 0"
                 align="center"
-                color="#FFFFFF"
-                width="3">
+                color="#FFFF00"
+                width="2">
             </a-text>
+
         </a-marker>
 
         <a-entity camera></a-entity>
@@ -107,4 +112,3 @@
 
 </body>
 </html>
-```
