@@ -44,6 +44,7 @@
 
 <body>
 
+    <!-- INSTRUÇÕES -->
     <div id="instrucoes">
         <h2>Gêneros Textuais com Realidade Aumentada</h2>
         <p>Aponte a câmera para um marcador para conhecer o gênero textual e sua finalidade.</p>
@@ -58,45 +59,47 @@
         <!-- MARCADOR NOTÍCIA -->
         <a-marker preset="hiro">
 
-            <!-- Quadro verde do título -->
+            <!-- QUADRO VERDE DO TÍTULO -->
             <a-plane
                 position="0 0.8 0"
                 rotation="-90 0 0"
                 width="1.5"
                 height="0.4"
-                material="color: #176B4D; shader: flat; side: double">
+                material="shader: flat; color: #176B4D; side: double">
             </a-plane>
 
-            <!-- Título -->
+            <!-- TÍTULO NOTÍCIA -->
             <a-text
                 value="NOTÍCIA"
-                position="0 0.8 0.02"
+                position="0 0.8 0.03"
                 rotation="-90 0 0"
                 align="center"
                 color="#FFFFFF"
                 width="3"
-                scale="0.7 0.7 0.7">
+                scale="0.7 0.7 0.7"
+                material="shader: msdf; transparent: true; depthTest: false">
             </a-text>
 
-            <!-- Quadro verde da explicação -->
+            <!-- QUADRO VERDE DA EXPLICAÇÃO -->
             <a-plane
                 position="0 0.2 0"
                 rotation="-90 0 0"
                 width="2.5"
                 height="1.0"
-                material="color: #176B4D; shader: flat; side: double">
+                material="shader: flat; color: #176B4D; side: double">
             </a-plane>
 
-            <!-- Explicação -->
+            <!-- EXPLICAÇÃO DA NOTÍCIA -->
             <a-text
-                value="A notícia informa o leitor de forma rápida, clara e objetiva sobre um acontecimento real."
-                position="0 0.2 0.02"
+                value="A notícia informa sobre um acontecimento real."
+                position="0 0.2 0.03"
                 rotation="-90 0 0"
                 align="center"
                 color="#FFFFFF"
                 width="2.2"
                 wrap-count="28"
-                scale="0.5 0.5 0.5">
+                scale="0.5 0.5 0.5"
+                material="shader: msdf; transparent: true; depthTest: false">
             </a-text>
 
         </a-marker>
@@ -104,49 +107,52 @@
         <!-- MARCADOR RECEITA -->
         <a-marker preset="kanji">
 
-            <!-- Quadro verde do título -->
+            <!-- QUADRO VERDE DO TÍTULO -->
             <a-plane
                 position="0 0.8 0"
                 rotation="-90 0 0"
                 width="1.5"
                 height="0.4"
-                material="color: #176B4D; shader: flat; side: double">
+                material="shader: flat; color: #176B4D; side: double">
             </a-plane>
 
-            <!-- Título -->
+            <!-- TÍTULO RECEITA -->
             <a-text
                 value="RECEITA"
-                position="0 0.8 0.02"
+                position="0 0.8 0.03"
                 rotation="-90 0 0"
                 align="center"
                 color="#FFFFFF"
                 width="3"
-                scale="0.7 0.7 0.7">
+                scale="0.7 0.7 0.7"
+                material="shader: msdf; transparent: true; depthTest: false">
             </a-text>
 
-            <!-- Quadro verde da explicação -->
+            <!-- QUADRO VERDE DA EXPLICAÇÃO -->
             <a-plane
                 position="0 0.2 0"
                 rotation="-90 0 0"
                 width="2.5"
                 height="1.0"
-                material="color: #176B4D; shader: flat; side: double">
+                material="shader: flat; color: #176B4D; side: double">
             </a-plane>
 
-            <!-- Explicação -->
+            <!-- EXPLICAÇÃO DA RECEITA -->
             <a-text
-                value="A receita ensina o leitor a preparar um alimento ou realizar um procedimento."
-                position="0 0.2 0.02"
+                value="A receita ensina a preparar um alimento ou realizar um procedimento."
+                position="0 0.2 0.03"
                 rotation="-90 0 0"
                 align="center"
                 color="#FFFFFF"
                 width="2.2"
                 wrap-count="28"
-                scale="0.5 0.5 0.5">
+                scale="0.5 0.5 0.5"
+                material="shader: msdf; transparent: true; depthTest: false">
             </a-text>
 
         </a-marker>
 
+        <!-- CÂMERA -->
         <a-entity camera></a-entity>
 
     </a-scene>
