@@ -59,15 +59,18 @@
     >
 
         <!-- Marcador para o gênero notícia -->
+        
         <a-marker preset="hiro">
-
-            <a-plane
-                position="0 0.8 0"
+            <a-text
+                value="NOTICIA"
+                position="0 0.5 0"
                 rotation="-90 0 0"
-                width="2.4"
-                height="1.1"
-                color="#176B4D">
-            </a-plane>
+                align="center"
+                color="#FFFFFF"
+                width="5">
+            </a-text>
+        </a-marker>
+```
 
             <a-text value="NOTICIA" position="0 1.1 0" rotation="-90 0 0" align="center" color="#FFFFFF" width="4"></a-text>
             <a-text value="Informa acontecimentos" position="0 0.8 0" rotation="-90 0 0" align="center" color="#FFFFFF" width="4"></a-text>
@@ -75,15 +78,18 @@
         </a-marker>
 
         <!-- Marcador para o gênero receita -->
-        <a-marker preset="kanji">
 
-            <a-plane
-                position="0 0.8 0"
+        <a-marker preset="kanji">
+            <a-text
+                value="RECEITA"
+                position="0 0.5 0"
                 rotation="-90 0 0"
-                width="2.4"
-                height="1.1"
-                color="#A65D35">
-            </a-plane>
+                align="center"
+                color="#FFFFFF"
+                width="5">
+            </a-text>
+        </a-marker>
+        
 
             <a-text value="RECEITA" position="0 1.1 0" rotation="-90 0 0" align="center" color="#FFFFFF" width="4"></a-text>
             <a-text value="Ensina a preparar algo" position="0 0.8 0" rotation="-90 0 0" align="center" color="#FFFFFF" width="4"></a-text>
