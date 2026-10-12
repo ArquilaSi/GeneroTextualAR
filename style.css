@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f7f4;
+    color: #24352d;
+}
+
+header {
+    background: #176b4d;
+    color: white;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+main {
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 0 16px;
+}
+
+.apresentacao,
+.cartoes article {
+    background: white;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 16px;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 12px;
+}
+
+.cartoes article h3 {
+    color: #176b4d;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background: #176b4d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #10543b;
+}
+
+#mensagem {
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 18px;
+    color: #52645a;
+    font-size: 13px;
+}

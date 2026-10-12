@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GêneroTextual AR</title>
+
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #instrucoes {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            z-index: 10;
+            background: rgba(23, 107, 77, 0.94);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #instrucoes h2 {
+            margin: 0 0 6px;
+            font-size: 20px;
+        }
+
+        #instrucoes p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="instrucoes">
+        <h2>GêneroTextual AR</h2>
+        <p>Aponte a câmera para o marcador Hiro ou Kanji.</p>
+    </div>
+
+    <a-scene
+        embedded
+        vr-mode-ui="enabled: false"
+        arjs="sourceType: webcam; debugUIEnabled: false;"
+        renderer="logarithmicDepthBuffer: true;"
+    >
+
+        <!-- Marcador da notícia -->
+        <a-marker preset="hiro">
+            <a-plane
+                position="0 0.8 0"
+                rotation="-90 0 0"
+                width="2.4"
+                height="1.1"
+                color="#176B4D"
+            ></a-plane>
+
+            <a-text
+                value="NOTICIA\nInforma sobre acontecimentos"
+                position="0 0.82 0"
+                rotation="-90 0 0"
+                align="center"
+                color="white"
+                width="3.5"
+            ></a-text>
+        </a-marker>
+
+        <!-- Marcador da receita -->
+        <a-marker preset="kanji">
+            <a-plane
+                position="0 0.8 0"
+                rotation="-90 0 0"
+                width="2.4"
+                height="1.1"
+                color="#A65D35"
+            ></a-plane>
+
+            <a-text
+                value="RECEITA\nEnsina a preparar algo"
+                position="0 0.82 0"
+                rotation="-90 0 0"
+                align="center"
+                color="white"
+                width="3.5"
+            ></a-text>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
