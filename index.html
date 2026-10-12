@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,20 +24,20 @@
             z-index: 10;
             background: rgba(23, 107, 77, 0.95);
             color: white;
-            padding: 15px;
+            padding: 12px;
             border-radius: 10px;
             text-align: center;
         }
 
         #instrucoes h2 {
-            margin: 0 0 8px;
-            font-size: 20px;
+            margin: 0 0 6px;
+            font-size: 18px;
         }
 
         #instrucoes p {
             margin: 0;
-            font-size: 14px;
-            line-height: 1.5;
+            font-size: 13px;
+            line-height: 1.4;
         }
     </style>
 </head>
@@ -47,20 +46,17 @@
 
     <div id="instrucoes">
         <h2>Gêneros Textuais com Realidade Aumentada</h2>
-        <p>
-            Aponte a câmera para um dos marcadores para conhecer
-            o gênero textual e sua finalidade.
-        </p>
+        <p>Aponte a câmera para um marcador para conhecer o gênero textual e sua finalidade.</p>
     </div>
 
     <a-scene
         embedded
         vr-mode-ui="enabled: false"
         arjs="sourceType: webcam; debugUIEnabled: false;"
-        renderer="logarithmicDepthBuffer: true;"
+        renderer="logarithmicDepthBuffer: true"
     >
 
-        <!-- Gênero textual: notícia -->
+        <!-- NOTÍCIA -->
         <a-marker preset="hiro">
 
             <a-text
@@ -69,21 +65,23 @@
                 rotation="-90 0 0"
                 align="center"
                 color="#FFFFFF"
-                width="4">
+                width="2"
+                scale="0.7 0.7 0.7">
             </a-text>
 
             <a-text
                 value="Informa acontecimentos"
-                position="0 0.2 0"
+                position="0 0.25 0"
                 rotation="-90 0 0"
                 align="center"
-                color="#FFFF00"
-                width="2">
+                color="#FFFFFF"
+                width="2"
+                scale="0.5 0.5 0.5">
             </a-text>
 
         </a-marker>
 
-        <!-- Gênero textual: receita -->
+        <!-- RECEITA -->
         <a-marker preset="kanji">
 
             <a-text
@@ -92,16 +90,18 @@
                 rotation="-90 0 0"
                 align="center"
                 color="#FFFFFF"
-                width="4">
+                width="2"
+                scale="0.7 0.7 0.7">
             </a-text>
 
             <a-text
                 value="Ensina a preparar algo"
-                position="0 0.2 0"
+                position="0 0.25 0"
                 rotation="-90 0 0"
                 align="center"
-                color="#FFFF00"
-                width="2">
+                color="#FFFFFF"
+                width="2"
+                scale="0.5 0.5 0.5">
             </a-text>
 
         </a-marker>
