@@ -68,7 +68,8 @@
             </a-text>
 
             <a-text
-                value="Esse gênero textual tem como principal função informar o leitor de forma rápida, clara e objetiva sobre um acontecimento real e atua"
+                value="Esse gênero textual tem como principal função informar o leitor de
+                forma rápida, clara e objetiva sobre um acontecimento real e atua"
                 position="0 0.2 0"
                 rotation="-90 0 0"
                 align="center"
@@ -93,7 +94,8 @@
             </a-text>
 
             <a-text
-                value="Esse gênero textual tem a função de instruir e ensinar o leitor a realizar um procedimento ou preparar um alimento"
+                value="Esse gênero textual tem a função de instruir e ensinar o leitor 
+                a realizar um procedimento ou preparar um alimento"
                 position="0 0.2 0"
                 rotation="-90 0 0"
                 align="center"
@@ -104,6 +106,163 @@
 
         </a-marker>
 
+        <a-entity camera></a-entity>
+
+    </a-scene>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gêneros Textuais com Realidade Aumentada</title>
+
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #instrucoes {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            z-index: 10;
+            background: rgba(23, 107, 77, 0.95);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #instrucoes h2 {
+            margin: 0 0 6px;
+            font-size: 17px;
+        }
+
+        #instrucoes p {
+            margin: 0;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- INSTRUÇÕES -->
+    <div id="instrucoes">
+        <h2>Gêneros Textuais com Realidade Aumentada</h2>
+        <p>Aponte a câmera para um marcador para conhecer o gênero textual e sua finalidade.</p>
+    </div>
+
+    <a-scene
+        embedded
+        vr-mode-ui="enabled: false"
+        arjs="sourceType: webcam; debugUIEnabled: false;"
+        renderer="logarithmicDepthBuffer: true">
+
+        <!-- MARCADOR NOTÍCIA -->
+        <a-marker preset="hiro">
+
+            <!-- Quadro verde do título -->
+            <a-plane
+                position="0 0.8 0"
+                rotation="-90 0 0"
+                width="1.5"
+                height="0.35"
+                color="#176B4D">
+            </a-plane>
+
+            <!-- Título NOTÍCIA -->
+            <a-text
+                value="NOTÍCIA"
+                position="0 0.8 0.01"
+                rotation="-90 0 0"
+                align="center"
+                color="#FFFFFF"
+                width="3"
+                scale="0.7 0.7 0.7">
+            </a-text>
+
+            <!-- Quadro verde da explicação -->
+            <a-plane
+                position="0 0.2 0"
+                rotation="-90 0 0"
+                width="2.2"
+                height="0.3"
+                color="#176B4D">
+            </a-plane>
+
+            <!-- Explicação da notícia -->
+            <a-text
+                value="Esse gênero textual tem como principal função informar o leitor de
+                forma rápida, clara e objetiva sobre um acontecimento real e atua."
+                position="0 0.2 0.01"
+                rotation="-90 0 0"
+                align="center"
+                color="#FFFFFF"
+                width="3"
+                scale="0.5 0.5 0.5">
+            </a-text>
+
+        </a-marker>
+
+
+        <!-- MARCADOR RECEITA -->
+        <a-marker preset="kanji">
+
+            <!-- Quadro verde do título -->
+            <a-plane
+                position="0 0.8 0"
+                rotation="-90 0 0"
+                width="1.5"
+                height="0.35"
+                color="#176B4D">
+            </a-plane>
+
+            <!-- Título RECEITA -->
+            <a-text
+                value="RECEITA"
+                position="0 0.8 0.01"
+                rotation="-90 0 0"
+                align="center"
+                color="#FFFFFF"
+                width="3"
+                scale="0.7 0.7 0.7">
+            </a-text>
+
+            <!-- Quadro verde da explicação -->
+            <a-plane
+                position="0 0.2 0"
+                rotation="-90 0 0"
+                width="2.2"
+                height="0.3"
+                color="#176B4D">
+            </a-plane>
+
+            <!-- Explicação da receita -->
+            <a-text
+                value="Esse gênero textual tem a função de instruir e ensinar o leitor 
+                a realizar um procedimento ou preparar um alimento"
+                position="0 0.2 0.01"
+                rotation="-90 0 0"
+                align="center"
+                color="#FFFFFF"
+                width="3"
+                scale="0.5 0.5 0.5">
+            </a-text>
+
+        </a-marker>
+
+        <!-- CÂMERA -->
         <a-entity camera></a-entity>
 
     </a-scene>
