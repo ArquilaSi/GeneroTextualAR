@@ -44,7 +44,6 @@
 
 <body>
 
-    <!-- INSTRUÇÕES -->
     <div id="instrucoes">
         <h2>Gêneros Textuais com Realidade Aumentada</h2>
         <p>Aponte a câmera para um marcador para conhecer o gênero textual e sua finalidade.</p>
@@ -59,47 +58,24 @@
         <!-- MARCADOR NOTÍCIA -->
         <a-marker preset="hiro">
 
-            <!-- QUADRO VERDE DO TÍTULO -->
-            <a-plane
-                position="0 0.8 0"
-                rotation="-90 0 0"
-                width="1.5"
-                height="0.4"
-                material="shader: flat; color: #176B4D; side: double">
-            </a-plane>
-
-            <!-- TÍTULO NOTÍCIA -->
             <a-text
                 value="NOTÍCIA"
-                position="0 0.8 0.03"
+                position="0 0.8 0"
                 rotation="-90 0 0"
                 align="center"
-                color="#FFFFFF"
+                color="#176B4D"
                 width="3"
-                scale="0.7 0.7 0.7"
-                material="shader: msdf; transparent: true; depthTest: false">
+                scale="0.7 0.7 0.7">
             </a-text>
 
-            <!-- QUADRO VERDE DA EXPLICAÇÃO -->
-            <a-plane
+            <a-text
+                value="Esse gênero textual tem como principal função informar o leitor de forma rápida, clara e objetiva sobre um acontecimento real e atual."
                 position="0 0.2 0"
                 rotation="-90 0 0"
-                width="2.5"
-                height="1.0"
-                material="shader: flat; color: #176B4D; side: double">
-            </a-plane>
-
-            <!-- EXPLICAÇÃO DA NOTÍCIA -->
-            <a-text
-                value="A notícia informa sobre um acontecimento real."
-                position="0 0.2 0.03"
-                rotation="-90 0 0"
                 align="center"
-                color="#FFFFFF"
-                width="2.2"
-                wrap-count="28"
-                scale="0.5 0.5 0.5"
-                material="shader: msdf; transparent: true; depthTest: false">
+                color="#176B4D"
+                width="3"
+                scale="0.5 0.5 0.5">
             </a-text>
 
         </a-marker>
@@ -107,55 +83,32 @@
         <!-- MARCADOR RECEITA -->
         <a-marker preset="kanji">
 
-            <!-- QUADRO VERDE DO TÍTULO -->
-            <a-plane
-                position="0 0.8 0"
-                rotation="-90 0 0"
-                width="1.5"
-                height="0.4"
-                material="shader: flat; color: #176B4D; side: double">
-            </a-plane>
-
-            <!-- TÍTULO RECEITA -->
             <a-text
                 value="RECEITA"
-                position="0 0.8 0.03"
+                position="0 0.8 0"
                 rotation="-90 0 0"
                 align="center"
-                color="#FFFFFF"
+                color="#176B4D"
                 width="3"
-                scale="0.7 0.7 0.7"
-                material="shader: msdf; transparent: true; depthTest: false">
+                scale="0.7 0.7 0.7">
             </a-text>
 
-            <!-- QUADRO VERDE DA EXPLICAÇÃO -->
-            <a-plane
+            <a-text
+                value="Esse gênero textual tem a função de instruir e ensinar o leitor a realizar um procedimento ou preparar um alimento."
                 position="0 0.2 0"
                 rotation="-90 0 0"
-                width="2.5"
-                height="1.0"
-                material="shader: flat; color: #176B4D; side: double">
-            </a-plane>
-
-            <!-- EXPLICAÇÃO DA RECEITA -->
-            <a-text
-                value="A receita ensina a preparar um alimento ou realizar um procedimento."
-                position="0 0.2 0.03"
-                rotation="-90 0 0"
                 align="center"
-                color="#FFFFFF"
-                width="2.2"
-                wrap-count="28"
-                scale="0.5 0.5 0.5"
-                material="shader: msdf; transparent: true; depthTest: false">
+                color="#176B4D"
+                width="3"
+                scale="0.5 0.5 0.5">
             </a-text>
 
         </a-marker>
 
-        <!-- CÂMERA -->
         <a-entity camera></a-entity>
 
     </a-scene>
 
 </body>
+
 </html>
